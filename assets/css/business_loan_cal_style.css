@@ -1,0 +1,177 @@
+.loan-calculator-field {
+    display: flex;
+    column-gap: 30px;
+    padding: 40px 40px 20px;
+    margin: 40px 0 20px;
+}
+.loan-term {
+    display: flex;
+    justify-content: center;
+}
+.select-unit {
+    position: relative;
+    top: 30px;
+}
+.sfs-total-cost-wrapper .inner-result {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sfs-total-cost-wrapper {
+    padding: 30px 20px;
+    margin: 20px 0px;
+    background:rgb(16 42 84 / 7%);
+}
+.sfs-total-cost-wrapper .inner-result span {
+    font-weight: 600;
+    font-size: 20px;
+}
+.tc-graph-btn a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+.tc-graph-btn a:hover {
+    color: #333;
+}
+.sfs-graph-wrapper .result-wrapper {
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+.sfs-graph-wrapper .inner-result {
+    text-align: center;
+}
+.sfs-graph-wrapper .inner-result span {
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+}
+.schedule-tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+.schedule-tab button:hover {
+    background-color: #ddd;
+}
+.tabcontent {
+    display: none;
+    padding: 0;
+    margin-top: 15px;
+}
+#schedule th, #schedule td , #monthly-schedule th, #monthly-schedule td {
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+    background: transparent;
+}
+.arrow-change i.fa {
+    transform: rotate(180deg);
+}
+.schedule-secton .schedule-tab {
+    padding: 7px 0;
+}
+.schedule-secton .schedule-tab a.schedule-tablinks {
+    padding: 9px 7px;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+    font-size: 19px;
+    margin-right: 25px;
+}
+.schedule-secton .schedule-tab a.active {
+    color: #ff9a00;
+}
+.schedule-secton {
+    padding: 30px;
+}  
+.schedule-secton .schedule-tab a.active {
+    color: #ff9a00;
+    border-bottom: 2px solid #ff9a00;
+}
+div#loan-calculator {
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    border-radius: 10px 10px 0 0;
+}
+header.page-header {
+    display: none;
+}
+.loan-calculator-header {
+    padding: 40px 40px 20px;
+    border-bottom: 1px solid #ccc;	
+    background: #102a54;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+.loan-calculator-body {
+    padding:40px;
+}
+input#loan-term {
+    border-right: 0;
+    border-radius: 3px 0px 0px 3px;
+}	
+select#term-unit {
+    padding: 10px 5px 9px;
+    border-radius: 0 3px 3px 0;
+}	
+.loan-calculator-field input, select {
+    border: 1px solid #ccc;
+}
+.loan-calculator-field label {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.clc-btn {
+    margin-bottom: 50px;
+}
+.tc-graph-btn {
+    margin-top: 30px;
+}
+button#calculate {
+    border: none;
+    padding: 20px 80px;
+    color: #fff;
+    background: #102a54;
+    border-radius: 5px;
+}
+.clc-btn button#calculate:hover {
+    background: var( --e-global-color-2cfb505 );
+    color: white;
+    border: none;
+}
+button#calculate:focus {
+    color: white;
+}
+.sfs-graph-wrapper .inner-result span.sub-title {
+    font-size: 15px;
+    line-height: 24px;
+    color: hsl(217deg 68% 20% / 80%);
+    display: block;
+}
+@media only screen and (max-width:767px){
+    .loan-calculator-field {
+        flex-flow: column;
+    }
+    .loan-term {
+        justify-content: start;
+    }
+    .tc-graph-btn a {
+        font-size: 15px;
+    }
+    .sfs-graph-wrapper .result-wrapper {
+        flex-flow: column;
+        align-items: center;
+    }
+}
